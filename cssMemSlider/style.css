@@ -9,27 +9,29 @@ body {
 }
 
 .wrapper {
-  width: 1280px;
-
+ width: 1280px;
   margin: 2% auto;
   
 }
 
 .slides {
-  width: 1100px;
+  width: 1200px;
   margin: auto;
+  transition: 0.5s ease-in;
+  
 }
 
 .slider {
-  width: 1100px;
+  width: 1200px;
   margin: auto;
   display: flex;
   overflow: hidden;
   transition: 0.5s ease-in;
+  
 }
 
 .slider__image img {
-  width: 1100px;
+  width: 1200px;
   height: 688px;
 }
 
@@ -70,6 +72,11 @@ label {
   border-radius: 50%;
 }
 
+label:active {
+  background-color: gold;;
+}
+
+
 .span-button-one,
 .span-button-two,
 .span-button-three,
@@ -89,7 +96,9 @@ label {
   overflow: hidden;
   width: 40%;
   text-align: center;
+  transition: 0.5s ease-in;
 }
+
 .quote {
   width: 100%;
   min-width: 100%;
@@ -97,37 +106,41 @@ label {
   font-size: 1.6rem;
   transition: 0.6s;
   color: white;
+  
 }
 
  
-
-
 input#slide-one:checked ~ .slides > .slider > .slider__image {
   transform: translateX(0);
+  transition: 0.5s ease-in;
 }
 input#slide-two:checked ~ .slides > .slider > .slider__image {
   transform: translateX(-100%);
+  transition: 0.5s ease-in;
 }
 input#slide-three:checked ~ .slides > .slider > .slider__image {
   transform: translateX(-200%);
+  transition: 0.5s ease-in;
 }
 input#slide-four:checked ~ .slides > .slider > .slider__image {
   transform: translateX(-300%);
+  transition: 0.5s ease-in;
 }
 
 input#slide-five:checked ~ .slides > .slider > .slider__image {
   transform: translateX(-400%);
+  transition: 0.5s ease-in;
 }
 
 input#slide-six:checked ~ .slides > .slider > .slider__image {
   transform: translateX(-500%);
+  transition: 0.5s ease-in;
 }
 
 input#slide-seven:checked ~ .slides > .slider > .slider__image {
   transform: translateX(-600%);
+  transition: 0.5s ease-in;
 }
-
-
 
 
 input#slide-one:checked ~ .quote-wrapper > .slider-quote > .quote  {
@@ -154,9 +167,13 @@ input#slide-six:checked ~ .quote-wrapper >.slider-quote > .quote {
 input#slide-seven:checked ~ .quote-wrapper >.slider-quote > .quote {
   transform: translateX(-600%);
 }
-/* 
+
+
+
+
+
 @media (max-width: 767px) {
-  .wrapper {
+  /*.wrapper {
     width: 100%;
   }
 
@@ -174,7 +191,7 @@ input#slide-seven:checked ~ .quote-wrapper >.slider-quote > .quote {
     max-width: 700px;
     max-height: 465px;
     
-  }
+  }*/
 
   .controls {
     text-align: center;
@@ -200,4 +217,4 @@ label {
 }
 
 }
- */
+ 
