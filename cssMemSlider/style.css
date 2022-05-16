@@ -9,16 +9,14 @@ body {
 }
 
 .wrapper {
- width: 1280px;
+  width: 1280px;
   margin: 2% auto;
-  
 }
 
 .slides {
   width: 1200px;
   margin: auto;
   transition: 0.5s ease-in;
-  
 }
 
 .slider {
@@ -27,7 +25,6 @@ body {
   display: flex;
   overflow: hidden;
   transition: 0.5s ease-in;
-  
 }
 
 .slider__image img {
@@ -47,7 +44,6 @@ input {
 .controls {
   display: flex;
   justify-content: flex-end;
-  
 }
 
 .button {
@@ -73,7 +69,7 @@ label {
 }
 
 label:active {
-  background-color: gold;;
+  background-color: gold;
 }
 
 .span-button-one,
@@ -98,7 +94,6 @@ label:active {
   transition: 0.5s ease-in;
 }
 
-
 .quote {
   width: 100%;
   min-width: 100%;
@@ -106,10 +101,8 @@ label:active {
   font-size: 1.6rem;
   transition: 0.6s;
   color: white;
-  
 }
 
- 
 input#slide-one:checked ~ .slides > .slider > .slider__image {
   transform: translateX(0);
   transition: 0.5s ease-in;
@@ -142,35 +135,30 @@ input#slide-seven:checked ~ .slides > .slider > .slider__image {
   transition: 0.5s ease-in;
 }
 
-
-input#slide-one:checked ~ .quote-wrapper > .slider-quote > .quote  {
+input#slide-one:checked ~ .quote-wrapper > .slider-quote > .quote {
   transform: translateX(0);
 }
-input#slide-two:checked ~ .quote-wrapper >.slider-quote > .quote   {
+input#slide-two:checked ~ .quote-wrapper > .slider-quote > .quote {
   transform: translateX(-100%);
 }
-input#slide-three:checked ~ .quote-wrapper >.slider-quote > .quote {
+input#slide-three:checked ~ .quote-wrapper > .slider-quote > .quote {
   transform: translateX(-200%);
 }
-input#slide-four:checked ~ .quote-wrapper >.slider-quote > .quote {
+input#slide-four:checked ~ .quote-wrapper > .slider-quote > .quote {
   transform: translateX(-300%);
 }
 
-input#slide-five:checked ~ .quote-wrapper >.slider-quote > .quote {
+input#slide-five:checked ~ .quote-wrapper > .slider-quote > .quote {
   transform: translateX(-400%);
 }
 
-input#slide-six:checked ~ .quote-wrapper >.slider-quote > .quote {
+input#slide-six:checked ~ .quote-wrapper > .slider-quote > .quote {
   transform: translateX(-500%);
 }
 
-input#slide-seven:checked ~ .quote-wrapper >.slider-quote > .quote {
+input#slide-seven:checked ~ .quote-wrapper > .slider-quote > .quote {
   transform: translateX(-600%);
 }
-
-
-
-
 
 @media (max-width: 767px) {
   /*.wrapper {
@@ -205,16 +193,14 @@ input#slide-seven:checked ~ .quote-wrapper >.slider-quote > .quote {
   .quote {
     font-size: 1.2rem;
   }
-label {
-  max-width: 10px;
-  width: 100%;
-  max-height: 10px;
-  height: 100%;
-}
+  label {
+    max-width: 10px;
+    width: 100%;
+    max-height: 10px;
+    height: 100%;
+  }
 
-.quote-wrapper {
-  margin-top: 3.5%;
+  .quote-wrapper {
+    margin-top: 3.5%;
+  }
 }
-
-}
- 
